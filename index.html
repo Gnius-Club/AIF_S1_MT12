@@ -1,24 +1,284 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 12: Diseñando para las Personas - Ergonomía Aumentada por IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 12: Diseñando para las Personas - Ergonomía Aumentada por IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes comprendan los principios de Diseño Centrado en el Usuario (UCD) y Ergonomía.</li>
+                                        <li>Que aprendan cómo la IA puede simular un análisis ergonómico usando datos antropométricos.</li>
+                                        <li>Que aprendan a usar los resultados de la simulación para guiar y justificar decisiones de diseño.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un "Brief de Diseño Ergonómico" completo que incluye: Proyecto, Usuario Objetivo, Boceto Inicial, Análisis Textual de la IA (simulación de mapa de calor), y una Estrategia de Rediseño justificada por dicho análisis.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Papel y lápices para bocetar.</li>
+                                        <li>Editor de texto o documentos para el brief.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo está operativo y la conexión a internet es estable.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender los conceptos de UCD y Ergonomía. Estar preparado para explicar la "simulación textual de un mapa de calor virtual" como un análisis de puntos de presión.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener a mano imágenes de productos con excelente y pobre ergonomía (ej. un buen ratón de ordenador vs. un mando de TV antiguo y rectangular) para ilustrar los conceptos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el paso del diseño para la máquina al diseño para la persona, enfocado en la empatía y la ergonomía.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la misión de hoy: diseñar con empatía asistidos por una IA que entiende de ergonomía.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Han aprendido a diseñar para la función y para la máquina. Hoy, nos enfocamos en el usuario final: la persona. Un producto puede ser funcionalmente perfecto y fabricable, pero si es incómodo, difícil de usar o causa fatiga, es un fracaso de diseño. Hoy, se convertirán en especialistas en factores humanos. Su misión es diseñar con empatía, asistidos por una IA que entiende de ergonomía.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual: 'Hola Xolo, listo para la Misión 12', seguido de su nombre, perfil y gustos. Esperen su confirmación para comenzar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar los conceptos de Diseño Centrado en el Usuario (UCD) y Ergonomía, y la idea de una IA que puede simular análisis ergonómicos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: UCD, Ergonomía y Ergonomía Aumentada ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce los conceptos clave y el uso de la IA como simulador ergonómico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Iniciaremos un proyecto enfocado en un objeto que interactúa con el cuerpo humano, como un mando o un ratón. Aquí entran dos conceptos clave: el **Diseño Centrado en el Usuario (UCD)**, que pone al usuario en el centro del proceso, y la **Ergonomía**, la ciencia de diseñar para el cuerpo humano. ¿Pero cómo sabemos si un diseño es ergonómico sin imprimir docenas de prototipos? Aquí es donde la IA puede ayudarnos. Imaginen una IA entrenada con miles de escaneos de manos y datos de presión. Esa IA puede analizar nuestro diseño y predecir qué zonas causarán incomodidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es diseñar basado en datos y empatía. Al final de la sesión, podrán decir: <strong>'Yo entiendo los principios de la ergonomía y puedo usar una simulación de análisis ergonómico por IA para justificar las decisiones de diseño en un brief para un producto centrado en el usuario.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (IA Entrenada con Datos Humanos) ⏰ 15 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender su rol como especialista en factores humanos y cómo traduce datos a un reporte textual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La IA como Especialista en Factores Humanos ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre la base de su conocimiento ergonómico y el proceso de simulación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos al A.I. GYM. Hoy Xolo es un especialista en ergonomía. Su conocimiento no viene de la geometría, sino de datos antropométricos: mediciones del cuerpo humano. Para entender cómo funciona, consúltenle: <strong>'Xolo, explícame cómo usas datos antropométricos para simular un análisis ergonómico y cuál es el proceso.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: De Datos a Diseño ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador explica cómo usar el reporte textual de Xolo para deducir correcciones de diseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El reporte textual que Xolo les dará es su guía. No verán una imagen, pero describirá un mapa de calor virtual. Si les describe una 'zona roja' en un borde, deben preguntarse: ¿qué característica de mi diseño está causando esa presión? ¿Es un borde afilado? ¿Es una curva que no se adapta a la mano? A partir de su descripción, ustedes deducen y proponen la corrección. Es un proceso de interpretación de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Diseño del Brief Ergonómico) ⏰ 10 minutos</h2>
+                <p>Fase de trabajo práctico rápido para elegir un objeto, definir un usuario, bocetar, simular y crear un brief ergonómico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ideación, Simulación y Creación del Brief ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes ejecutan el flujo de trabajo completo para generar su entregable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 10 minutos para un ciclo completo. Primero, elijan un objeto ergonómico a rediseñar y definan a su usuario. Segundo, hagan un boceto rápido en papel. Tercero, describan su concepto a Xolo para obtener el "Reporte de Análisis Textual". Finalmente, creen un nuevo documento para su "Brief de Diseño Ergonómico", incluyendo el proyecto, usuario, boceto, el análisis de Xolo y su estrategia de rediseño basada en ese análisis. ¡Adelante!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir el proceso de diseño basado en la simulación y reflexionar sobre la empatía como herramienta.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre el proceso y el cambio de perspectiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su brief. No piensen solo en la idea, sino en el proceso. Prepárense para explicar: <strong>"Mi primera idea era esta. Tras el análisis de Xolo, descubrí que causaba presión aquí. Por lo tanto, mi plan de diseño ahora es..."</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten sus briefs y el proceso de rediseño guiado por la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, presenten sus briefs ergonómicos. Expliquen el proceso: la idea inicial, el feedback de la IA, y cómo eso informó su nueva estrategia de diseño. Discutan cómo cambia su forma de pensar al enfocarse primero en el usuario y su cuerpo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador consolida la sesión, enfatizando el diseño basado en empatía y datos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Hoy han dado un paso crucial hacia el diseño profesional. Han aprendido que un buen diseño no nace de la inspiración pura, sino de la empatía y los datos. Han utilizado una simulación de IA para 'ponerse en la piel' de su usuario y tomar decisiones informadas. Este enfoque, el Diseño Centrado en el Usuario, es la base de todos los productos exitosos del mundo. Tienen un plan sólido. Ahora, a modelarlo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
